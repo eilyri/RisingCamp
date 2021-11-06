@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="EduTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashimage" translatesAutoresizingMaskIntoConstraints="NO" id="sQ5-dT-WVM">
+                    <rect key="frame" x="-551" y="-52" width="1516" height="1000"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sQ5-dT-WVM" secondAttribute="height" multiplier="97:64" id="RPK-6z-1sk"/>
+                        <constraint firstAttribute="height" constant="1000" id="x7p-Vt-eog"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyR-Mq-tkp">
+                    <rect key="frame" x="100" y="494" width="214" height="39.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WyR-Mq-tkp" secondAttribute="height" multiplier="457:84" id="FeU-zu-Khd"/>
+                    </constraints>
+                    <state key="normal" image="kakaologinbutton"/>
+                    <connections>
+                        <action selector="kakaoLogin:" destination="-1" eventType="touchUpInside" id="y1b-pD-ZIS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lr-IZ-0Cz">
+                    <rect key="frame" x="100" y="567" width="214" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2lr-IZ-0Cz" secondAttribute="height" multiplier="457:84" id="5DN-8l-t6I"/>
+                    </constraints>
+                    <state key="normal" image="emailloginbutton"/>
+                    <connections>
+                        <action selector="EmailLoginButton:" destination="-1" eventType="touchUpInside" id="0a6-qn-qDC"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-6d-YTY">
+                    <rect key="frame" x="82" y="244" width="250" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="MMm-6d-hFs"/>
+                        <constraint firstAttribute="width" secondItem="lMW-6d-YTY" secondAttribute="height" multiplier="71:27" id="gOq-hb-mZK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71n-cg-dUM">
+                    <rect key="frame" x="335" y="829" width="59" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="건너뛰기">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="skipButton:" destination="-1" eventType="touchUpInside" id="pHn-YI-xig"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsR-LY-u2b">
+                    <rect key="frame" x="133.5" y="354" width="147" height="22.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="맛 집 찾 고 싶 을 때">
+                            <attributes>
+                                <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="19" name="AppleMyungjo"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCx-2S-Ky1">
+                    <rect key="frame" x="176" y="536.5" width="62" height="27.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="━">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.94283380495249702" green="0.97049866424473485" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="14" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="  ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.94283380495249702" green="0.97049866424473485" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="22" name="BodoniSvtyTwoITCTT-BookIta"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.12548999999999999" green="0.12941" blue="0.13333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="or">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.94283380495249702" green="0.97049866424473485" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="22" name="BodoniSvtyTwoITCTT-BookIta"/>
+                                <font key="NSOriginalFont" size="18" name="BodoniSvtyTwoITCTT-BookIta"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.94283380495249702" green="0.97049866424473485" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="22" name="BodoniSvtyTwoITCTT-BookIta"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.94283380495249702" green="0.97049866424473485" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="22" name="BodoniSvtyTwoITCTT-BookIta"/>
+                                <font key="NSOriginalFont" size="18" name="BodoniSvtyTwoITCTT-BookIta"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="━">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.94283380495249702" green="0.97049866424473485" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="14" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.12549020349979401" green="0.12941177189350128" blue="0.13333334028720856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vCx-2S-Ky1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7vT-3O-gv3"/>
+                <constraint firstItem="jsR-LY-u2b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Bo-Vd-V9H"/>
+                <constraint firstItem="2lr-IZ-0Cz" firstAttribute="top" secondItem="vCx-2S-Ky1" secondAttribute="bottom" constant="3" id="Agv-JZ-FHK"/>
+                <constraint firstItem="WyR-Mq-tkp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AkM-Qm-hoh"/>
+                <constraint firstItem="lMW-6d-YTY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FRS-lh-8a3"/>
+                <constraint firstItem="WyR-Mq-tkp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="450" id="JRq-Ie-nWw"/>
+                <constraint firstItem="vCx-2S-Ky1" firstAttribute="top" secondItem="WyR-Mq-tkp" secondAttribute="bottom" constant="3" id="Pep-YX-IX4"/>
+                <constraint firstItem="lMW-6d-YTY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="WFN-DS-G7V"/>
+                <constraint firstItem="sQ5-dT-WVM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XGN-jX-i7A"/>
+                <constraint firstItem="71n-cg-dUM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="cjQ-bM-LsC"/>
+                <constraint firstItem="WyR-Mq-tkp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="dZg-BN-78R"/>
+                <constraint firstItem="jsR-LY-u2b" firstAttribute="top" secondItem="lMW-6d-YTY" secondAttribute="bottom" constant="15" id="eZv-aR-IxW"/>
+                <constraint firstItem="2lr-IZ-0Cz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ofw-eb-coE"/>
+                <constraint firstItem="2lr-IZ-0Cz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="v0h-md-kVP"/>
+                <constraint firstItem="sQ5-dT-WVM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xV1-MT-KJT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="71n-cg-dUM" secondAttribute="trailing" constant="20" id="z1d-xc-VTQ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emailloginbutton" width="456" height="84"/>
+        <image name="kakaologinbutton" width="457" height="84"/>
+        <image name="logo" width="852" height="324"/>
+        <image name="splashimage" width="2048" height="1365"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

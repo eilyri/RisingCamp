@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneViewController" customModule="EduTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="c5C-Qi-htS" id="8C7-aa-8Js"/>
+                <outlet property="phoneTextField" destination="kNP-Oh-4PU" id="l6R-GM-Fn9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인 인증으로 망고플레이트에서 제안하는 맛집을 다양하게 즐겨보세요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiI-9n-KGT">
+                    <rect key="frame" x="25" y="130" width="270" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5AQ-MC-nfn"/>
+                        <constraint firstAttribute="width" constant="270" id="QlO-aq-F6L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="휴대폰 번호를 &quot;-&quot;없이 번호만 입력" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNP-Oh-4PU">
+                    <rect key="frame" x="25" y="205" width="364" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="mainOrange"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="7Lm-NP-1fW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5C-Qi-htS">
+                    <rect key="frame" x="92" y="268" width="230" height="48"/>
+                    <color key="backgroundColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="8Qy-kY-JDA"/>
+                        <constraint firstAttribute="width" constant="230" id="GxB-b5-TPe"/>
+                    </constraints>
+                    <state key="normal" title="다음">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="f15-2N-uL8"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-go-Gaf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3H-Db-gPb">
+                            <rect key="frame" x="0.0" y="99" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.80000000000000004" id="Snt-vI-3AB"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBU-xf-Lqx">
+                            <rect key="frame" x="20" y="60" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="pcd-8Q-fVd"/>
+                                <constraint firstAttribute="width" constant="25" id="qg9-Ef-ClZ"/>
+                            </constraints>
+                            <state key="normal" image="leftnavbuttonc"/>
+                            <connections>
+                                <action selector="backButton:" destination="-1" eventType="touchUpInside" id="JIW-jm-eND"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대폰 번호 인증" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwf-Ur-b05">
+                            <rect key="frame" x="65" y="62" width="112" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-F7-0Oe">
+                            <rect key="frame" x="374" y="62.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="90D-9p-lkm"/>
+                                <constraint firstAttribute="width" constant="20" id="Uxc-t7-tJC"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="TPX-Y3-go6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LSE-F7-0Oe" secondAttribute="trailing" constant="20" id="0VL-AW-uBz"/>
+                        <constraint firstAttribute="height" constant="100" id="B72-eV-qh0"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="HA6-UA-1SE"/>
+                        <constraint firstItem="KBU-xf-Lqx" firstAttribute="leading" secondItem="Bu8-go-Gaf" secondAttribute="leading" constant="20" id="JVw-Ka-ciW"/>
+                        <constraint firstItem="KBU-xf-Lqx" firstAttribute="top" secondItem="Bu8-go-Gaf" secondAttribute="top" constant="60" id="Oxo-9C-I2M"/>
+                        <constraint firstAttribute="trailing" secondItem="S3H-Db-gPb" secondAttribute="trailing" id="Uib-TN-1Kd"/>
+                        <constraint firstAttribute="bottom" secondItem="S3H-Db-gPb" secondAttribute="bottom" id="XhZ-sh-gn4"/>
+                        <constraint firstItem="LSE-F7-0Oe" firstAttribute="centerY" secondItem="Nwf-Ur-b05" secondAttribute="centerY" id="cbl-6H-uS1"/>
+                        <constraint firstItem="Nwf-Ur-b05" firstAttribute="centerY" secondItem="KBU-xf-Lqx" secondAttribute="centerY" id="jr9-ss-kBY"/>
+                        <constraint firstItem="Nwf-Ur-b05" firstAttribute="leading" secondItem="KBU-xf-Lqx" secondAttribute="trailing" constant="20" id="kSv-xW-F7e"/>
+                        <constraint firstItem="S3H-Db-gPb" firstAttribute="leading" secondItem="Bu8-go-Gaf" secondAttribute="leading" id="mNY-gX-HmP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CiI-9n-KGT" firstAttribute="top" secondItem="Bu8-go-Gaf" secondAttribute="bottom" constant="30" id="1ag-rq-U63"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kNP-Oh-4PU" secondAttribute="trailing" constant="25" id="8jY-jU-ZS3"/>
+                <constraint firstItem="kNP-Oh-4PU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="HgN-SG-g2g"/>
+                <constraint firstItem="Bu8-go-Gaf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K6P-EU-zyt"/>
+                <constraint firstItem="c5C-Qi-htS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OkC-0o-OtG"/>
+                <constraint firstItem="c5C-Qi-htS" firstAttribute="top" secondItem="kNP-Oh-4PU" secondAttribute="bottom" constant="25" id="W7H-0Z-o7U"/>
+                <constraint firstItem="kNP-Oh-4PU" firstAttribute="top" secondItem="CiI-9n-KGT" secondAttribute="bottom" constant="30" id="ZkA-9w-vZJ"/>
+                <constraint firstItem="Bu8-go-Gaf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oha-St-RtS"/>
+                <constraint firstAttribute="trailing" secondItem="Bu8-go-Gaf" secondAttribute="trailing" id="plt-3R-Rcf"/>
+                <constraint firstItem="CiI-9n-KGT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="t3n-JB-bJe"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="128" height="128"/>
+        <image name="leftnavbuttonc" width="32" height="32"/>
+        <namedColor name="mainOrange">
+            <color red="0.96100002527236938" green="0.40000000596046448" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
